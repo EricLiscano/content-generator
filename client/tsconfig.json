@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": false,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictFunctionTypes": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["webpack-env", "vuetify", "node", "vue", "jest"],
+    "typeRoots": [
+      "node_modules/@types/node",
+      "node_modules/@types",
+      "node_modules/@types/jest",
+      "node_modules/@types/vuetify",
+      "node_modules/@types/vue",
+      "node_modules/@types/webpack-env",
+
+    ],
+    "paths": {
+      "@/*": ["src/*", "./*"],
+      "crypto": ["node_modules/crypto-js/crypto-js.js"],
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost", "ES6"]
+  },
+  "vueCompilerOptions": {
+    "target": 2
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.js",
+    "tests/**/*.tsx",
+    "src/core/metrics/performanceUtils.js"
+  ],
+  "exclude": ["node_modules"]
+}
